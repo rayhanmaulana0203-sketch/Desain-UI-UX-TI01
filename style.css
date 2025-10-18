@@ -1,0 +1,109 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #F5B027;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .breadcrumb {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .product-container {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .product-image {
+      width: 300px;
+      height: 300px;
+      background-color: #ccc;
+      margin-right: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .product-details {
+      max-width: 600px;
+    }
+
+    .product-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 18px;
+      color: green;
+      margin-bottom: 20px;
+    }
+
+    .variants, .sizes {
+      margin-bottom: 20px;
+    }
+
+    .variants div, .sizes div {
+      display: inline-block;
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #000;
+      cursor: pointer;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .description {
+      margin-top: 30px;
+    }
+
+    .description p {
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #5c1fe9;
+      font-size: 14px;
+    }
+    
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.medsos ul li{ 
+    display: inline-block;
+    color: #fff;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
