@@ -1,174 +1,99 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produk - Kaos polos Premium</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    header {
-      background-color: #F5B027;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #000;
-    }
-
-    .breadcrumb {
-      font-size: 14px;
-      margin-top: 10px;
-    }
-
-    .product-container {
-      display: flex;
-      margin-top: 20px;
-    }
-
-    .product-image {
-      width: 300px;
-      height: 300px;
-      background-color: #ccc;
-      margin-right: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      color: #555;
-    }
-
-    .product-details {
-      max-width: 600px;
-    }
-
-    .product-title {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .product-price {
-      font-size: 18px;
-      color: green;
-      margin-bottom: 20px;
-    }
-
-    .variants, .sizes {
-      margin-bottom: 20px;
-    }
-
-    .variants div, .sizes div {
-      display: inline-block;
-      padding: 10px;
-      margin: 5px;
-      border: 1px solid #000;
-      cursor: pointer;
-    }
-
-    button {
-      padding: 10px 20px;
-      background-color: #333;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    .description {
-      margin-top: 30px;
-    }
-
-    .description p {
-      line-height: 1.6;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      color: #5c1fe9;
-      font-size: 14px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Page - Pemesanan Barang</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <div class="logo"><strong>Han Store.com</strong></div>
-    <nav>
-      <input type="text" placeholder="Search...">
-                        <button>🔍</button>
-      <a href="#">Home</a>
-      <a href="#">Product</a>
-      <a href="#">Menu</a>
-      <a href="#"></a>
-    </ul>
-  </div>
-    </nav>
-  </header>
-
-  <div class="breadcrumb">
-    Fashion Pria > Fashion Wanita > Fashion Muslim
-  </div>
-
-<div class=<"product-detail">
-  <div class=<"product-image">
-    <div class=<"slider-container">
-      <div class=<"slider">
-        <div class="slide">
-        <img src="assets/img/kaos hitam.jpeg" alt="Hitam" width="300px">
-          <img src="assets/img/kaos merah.jpeg" alt="merah" width="300px">
-            <img src="assets/img/kaos putih.jpeg" alt="putih" width="300">
-    </div>
-</div>
-                        <button class="slider-btn prev">&#10094;</button>
-                        <button class="slider-btn next">&#10095;</button>
-                    </div>
-                    <div class="slider-nav">
-                        <div class="slider-dot active"></div>
-                        <div class="slider-dot"></div>
-                        <div class="slider-dot"></div>
-                        <div class="slider-dot"></div>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="header">
+            <h1>A Web Page</h1>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Generate Link</a>
+                <a href="#">Transaction History</a>
+                <a href="#">Policy</a>
+                <a href="#">Logout</a>
             </div>
-    <div class="product-details">
-      <div class="product-title">Kaos Polos Pria Wanita Cotton Combed Premium</div>
-      <div class="product-price">Rp. 35.000</div>
-                        <div class="color-option color-black active" title="Hitam"></div>
-                        <div class="color-option color-white" title="Putih"</div>
-                        <div class="color-option color-navy" title="Merah"></div>
+        </div>
+        
+        <div class="form-container">
+            <form action="output.php" method="POST">
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="form-label">Title Here <span class="required">*</span></div>
+                        <div class="form-input">
+                            <input type="text" name="title" value="Headbook for £800" required>
+                        </div>
                     </div>
-      <div class="sizes">
-        <strong>Ukuran:</strong><br>
-        <div>M</div>
-        <div>L</div>
-        <div>XL</div>
-        <div>XXL</div>
-      </div>
-
-      <div class="action-buttons">
-                    <button class="btn btn-primary">Tambah ke Keranjang</button>
-                    <button class="btn btn-secondary">Beli Sekarang</button>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Description</div>
+                        <div class="form-input">
+                            <input type="text" name="description" value="Year: 2009 Model: Condition: What">
+                            <p class="instruction">Product description and specifications</p>
+                        </div>
+                    </div>
                 </div>
-
-  <div class="description">
-    <h3>Deskripsi Produk</h3>
-    <p>
-      Kaos Polos pilihan dengan berbagai warna pilihan dan kualitas terbaik serta dibalut dengan jahitan yang rapih membuat kaos polos ini nyaman di gunakan di berbagai aktifitas, kaos ini cocok di gunakan untuk pria dan . Terbuat dari bahan katun premium, nyaman digunakan sehari-hari. Tersedia dalam berbagai ukuran dan warna kekinian!
-    </p>
-  </div>
-
-  <footer>
-    &copy; @2025.HAN STORE 
-  </footer>
-
-
-
+                
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="form-label">Account Number <span class="required">*</span></div>
+                        <div class="form-input">
+                            <input type="text" name="account_number" value="12-146-7R4-0" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Book</div>
+                        <div class="form-input">
+                            <input type="text" name="book" value="FBBC">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Account Holder <span class="required">*</span></div>
+                        <div class="form-input">
+                            <input type="text" name="account_holder" value="Name Here" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <div class="form-row">
+                        <div class="form-label">Transaction <span class="required">*</span></div>
+                        <div class="form-input">
+                            <select name="transaction_count" required>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3" selected>3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                            </select>
+                            <p class="instruction">"If the transaction is for 3 person, choose 3 from the drop-down list"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Send to Mobile Phone</div>
+                        <div class="form-input">
+                            <input type="text" name="mobile_phones" value="13-4567R90, 12-4567R91" placeholder="Enter mobile numbers separated by commas">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Send to Email</div>
+                        <div class="form-input">
+                            <input type="text" name="emails" value="m/mm2.g10@vision.ac.uk, fys_50@yahoo.com" placeholder="Enter email addresses separated by commas">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button type="submit" class="submit-btn">Submit Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
