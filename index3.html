@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 5.2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #ecf0f1;
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin: 0 15px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            padding: 20px;
+            min-height: 500px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 25%;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .sidebar h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #bdc3c7;
+        }
+
+        .sidebar-list {
+            list-style: none;
+        }
+
+        .sidebar-item {
+            margin-bottom: 10px;
+        }
+
+        .sidebar-link {
+            color: #34495e;
+            text-decoration: none;
+            display: block;
+            padding: 8px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar-link:hover {
+            background-color: #d5dbdb;
+        }
+
+        /* Content Area */
+        .content {
+            width: 75%;
+        }
+
+        .content-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .content-box h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .content-box p {
+            margin-bottom: 15px;
+        }
+
+        .content-box .read-more {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .content-box .read-more:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Positioning examples */
+        .positioned-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .floating-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1abc9c;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .sidebar, .content {
+                width: 100%;
+            }
+            
+            .sidebar {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>STT Terpadu Nurul Fikri</h1>
+            <p>
+            <div class="positioned-box">Home</div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Tentang</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Produk</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Layanan</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h2>Menu</h2>
+                <ul class="sidebar-list">
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Berita Terbaru</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Artikel</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Tutorial</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Forum Diskusi</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Download</a></li>
+                </ul>
+
+                <h2>Kategori</h2>
+                <ul class="sidebar-list">
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Web Development</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Mobile Apps</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">UI/UX Design</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Data Science</a></li>
+                </ul>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content">
+                <div class="content-box">
+                    <h2>CSS Box Model</h2>
+                    <p>Box model adalah konsep fundamental dalam CSS yang mendefinisikan bagaimana elemen-elemen HTML ditampilkan di halaman web. Setiap elemen dianggap sebagai kotak yang terdiri dari margin, border, padding, dan konten.</p>
+                    <p>Dengan memahami box model, Anda dapat mengontrol tata letak dan desain halaman web dengan lebih baik.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya</a>
+                </div>
+
+                <div class="content-box">
+                    <h2>CSS Positioning</h2>
+                    <p>CSS positioning memungkinkan Anda untuk mengatur posisi elemen di halaman web. Ada beberapa jenis positioning: static, relative, absolute, fixed, dan sticky.</p>
+                    <p>Masing-masing jenis positioning memiliki karakteristik dan penggunaan yang berbeda, memungkinkan Anda membuat layout yang kompleks dan responsif.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya</a>
+                </div>
+
+                <div class="content-box">
+                    <h2>Mozilla Firefox</h2>
+                    <p>Mozilla Firefox adalah peramban web sumber terbuka yang dikembangkan oleh Mozilla Foundation. Firefox dikenal dengan kecepatan, keamanan, dan dukungan terhadap standar web terbaru.</p>
+                    <p>Dengan berbagai fitur dan ekstensi yang tersedia, Firefox menjadi pilihan populer bagi pengembang web dan pengguna biasa.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2025 STT Terpadu Nurul Fikri. Semua hak dilindungi.</p>
+            <p>http://nurulfikri.ac.id</p>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="floating-box">
+        <span>↑</span>
+    </div>
+</body>
+</html>
