@@ -1,0 +1,79 @@
+body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        fieldset {
+            border: 2px solid black;
+            padding: 20px;
+            max-width: 700px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        form {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            grid-row-gap: 15px;
+            align-items: center;
+        }
+        label {
+            justify-self: end;
+            padding-right: 10px;
+            font-size: 14px;
+        }
+        select, input[type="text"], input[type="email"], textarea, input[type="date"] {
+            font-size: 14px;
+            padding: 5px;
+            border: 1.5px solid black;
+            outline: none;
+        }
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+        .radio-group {
+            display: inline-flex;
+            gap: 15px;
+        }
+        .radio-group label {
+            justify-self: start;
+            padding-right: 0;
+        }
+        .buttons {
+            grid-column: 2 / 3;
+            margin-top: 10px;
+            display: flex;
+            gap: 15px;
+        }
+        button {
+            font-size: 14px;
+            padding: 6px 14px;
+            border: 1.5px solid black;
+            background-color: white;
+            cursor: pointer;
+            box-shadow: 2px 2px 0 black;
+        }
+        
+        button:active {
+            box-shadow: none;
+            position: relative;
+            top: 2px;
+            left: 2px;
+        }
+
+        .small-date-input {
+            width: 60px;
+            text-align: center;
+        }
+
+        .date-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        input[type="date"] {
+            border: 1.5px solid black;
+            padding: 5px;
+            font-size: 14px;
+        }

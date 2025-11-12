@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking Service</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <fieldset>
+            <legend>Booking Service</legend>
+        <form>
+            <label for="jenis-kendaraan">Jenis Kendaraan</label>
+            <select id="jenis-kendaraan" name="jenis-kendaraan">
+                <option value="minibus" selected>Minibus</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="bus">MPV</option>
+                <option value="truck">Pick Up</option>
+            </select>
+
+            <label for="nama-pemesan">Nama Pemesan:</label>
+            <input type="text" id="nama-pemesan" name="nama-pemesan">
+
+            <label>Kategori Peminjam :</label>
+            <div class="radio-group">
+                <label><input type="radio" name="kategori" value="pribadi"> Pribadi</label>
+                <label><input type="radio" name="kategori" value="perusahaan"> Perusahaan/Organisasi</label>
+            </div>
+
+            <label for="deskripsi">Deskripsi Kebutuhan</label>
+            <textarea id="deskripsi" name="deskripsi"></textarea>
+
+            <label>Jam, Tanggal Service:</label>
+            <div class="date-group">
+                <input type="text" class="small-date-input" placeholder="  /  /  ">
+                <input type="date" name="tanggal-service">
+            </div>
+
+            <label for="request-montir">Request Montir</label>
+            <input type="text" id="request-montir" name="request-montir">
+
+            <label for="telpon">Telpon/HP :</label>
+            <input type="text" id="telpon" name="telpon">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
